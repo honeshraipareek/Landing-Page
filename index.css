@@ -39,6 +39,8 @@ body{
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 0.75vw;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .bob{
@@ -92,19 +94,29 @@ a {
 } */
 .profiles{
     display: flex;
-    position: absolute;
+    position: fixed;
+    justify-content: space-between;
+    top: 50%;
 }
-.github{
+.links{
     display: flex;
-    align-items: center;
+    align-content: center;
     color: white;
     justify-content: center;
-    padding-left: 6vw;
     /* transform: rotate(90deg) translateY(45vw) translateX(-40vw); */
 }
 
-.github img{
-    width: 2.5%;
+.github{
+    transform: rotate(90deg);
+}
+
+.linkin{
+    transform: rotate(-90deg);
+}
+
+
+.links img{
+    width: 1vw;
 }
 
 .sml-link{
@@ -133,7 +145,7 @@ a {
         text-align: center;
     }
 
-    .type, .des, .photo{
+    .type, .des, .phot{
         padding-left: 0;
     }
 }
