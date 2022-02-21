@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    margin: 3rem;
+    background: url('./blob-scene-haikei.svg');
+    background-attachment: fixed;
+    background-size: cover;
+   overflow: hidden;
+
+}
+
+.page{
+    min-height: 100vh;
+    position: relative;
+
+}
+.nave{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+   padding: 2vw;
+}
+
+.nave img{
+    width: 3vw;
+}
+.nave h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 0.75vw;
+}
+
+.bob{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    animation: anim 3s alternate infinite;
+}
+@keyframes anim{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(15deg);
+    }
+}
+.big-text{
+    font-size: 7vw;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.type{
+    padding-left: 30vw;
+}
+
+.des{
+    padding-left: 62vw;
+}
+.phot{
+    padding-left: 20vw;
+    
+}
+
+a {
+    text-decoration: none;
+ }
+ a:hover{ 
+     color: chartreuse;
+ }
+ a:visited{
+     color: white;
+ }
+
+
+/* @media (max-width: 30rem){
+    .bob{
+        width: 200%;
+        margin-top: 20vh;
+    }
+} */
+.profiles{
+    display: flex;
+    position: absolute;
+}
+.github{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    padding-left: 6vw;
+    /* transform: rotate(90deg) translateY(45vw) translateX(-40vw); */
+}
+
+.github img{
+    width: 2.5%;
+}
+
+.sml-link{
+    font-size: 0.75vw;
+}
+
+.small-text{
+    font-size: 1.25vw;
+}
+
+@media only screen and (orientation: portrait) {
+    .bob{
+        width: 250%;
+        margin-top: 12vw;
+        margin-left: -120vw;
+    }
+
+    .big-text{
+        font-size: 15vw;
+    }
+
+    .small-text{
+        font-size: 3vw;
+    }
+    .container-fluid{
+        text-align: center;
+    }
+
+    .type, .des, .photo{
+        padding-left: 0;
+    }
+}
